@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/* =========================================
+	リセットCSS
+========================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+
+/* ========================================
+    全体設定
+========================================= */
+body {
+	color:#474747;
+	font-size: 14px;
+	line-height: 1.4em;
+	font-family: "メイリオ", "Meiryo", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #f8f5f0;
+}
+
+a {
+	color:#474747;
+	text-decoration:none;
+}
+
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/* ========================================
+    ヘッダー
+========================================= */
+
+header {
+	width: 100%;
+	height: 74px;
+	background-color: #f8f5f0;
+	border-bottom: 4px solid #ff9022;
+}
+
+header div#header_inner {
+	height: 42px;
+	width: 980px;
+	margin: 35px auto;
+}
+
+header h1 {
+	float: left;
+}
+
+header nav {
+	float: right;
+	margin-top: 32px;
+}
+
+header nav ul li {
+	float: left;
+	padding-right: 40px;
+}
+
+header nav ul li:last-child {
+	padding-right: 0;
+} 
+
+header nav ul li a {
+	color: #262626;
+	font-weight: bold;
+}
+
+/* ========================================
+    メインイメージ
+========================================= */
+
+div#mainimage {
+	width: 100%;
+	height: 320px;
+	background: url(images/mainimage.jpg) no-repeat top center;
+	padding-top: 80px; 
+}
+
+div#mainimage h2 {
+	width: 160px;
+	height: 180px;
+	font-size: 40px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.6);
+	margin: 0 auto;
+	line-height: 65px;
+	padding: 40px 50px;
+	letter-spacing: 13px;
+}
+
+/* ========================================
+    wrapper
+========================================= */
+
+div#wrapper {
+	width: 980px;
+	height: auto;
+	margin: 35px auto 70px auto;
+}
+
+h3.title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #ba5d00;
+	display: inline-block;
+	margin-bottom: 20px;
+	padding-left: 40px;
+}
+
+/* ========================================
+    メニュー紹介
+========================================= */
+
+div#menu {
+	height: 205px;
+	width: 980px;
+	margin-bottom: 70px;
+}
+
+div#menu h3 {
+	background: url(images/icon_menu.png) no-repeat;
+}
+
+div#menu ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+div#menu ul li:last-child {
+	margin-right: 0;
+}
+
+div#menu ul li dl dd {
+	margin-top: 10px;
+}
+
+/* ========================================
+    お知らせ
+========================================= */
+
+div#left {
+	width: 480px;
+	height: auto;
+	float: left;
+}
+
+div#left h3 {
+	background: url(images/icon_news.png) no-repeat;
+}
+
+div#left_inner {
+	background-color: #fff;
+	width: 448px;
+	height: 220px;
+	padding: 15px 15px;
+	border: 1px solid #c8bdba;
+}
+
+div#left_inner ul li {
+	margin-bottom: 20px;
+}
+
+div#left_inner ul li:last-child {
+	margin-bottom: 0;
+}
+
+div#left_inner ul li dl dt {
+	font-size: 12px;
+}
+
+/* ========================================
+    アクセス
+========================================= */
+
+div#right {
+	width: 480px;
+	height: auto;
+	float: right;
+}
+
+div#right h3 {
+	background: url(images/icon_access.png) no-repeat;
+}
+
+div#right_inner {
+	background-color: #fff;
+	width: 438px;
+	height: 220px;
+	padding: 15px 15px;
+	border: 1px solid #c8bdba;
+}
+
+/* ========================================
+    フッター
+========================================= */
+
+footer {
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	background-color: #40352a;
+	width: 100%;
+	height: 70px;
+}
